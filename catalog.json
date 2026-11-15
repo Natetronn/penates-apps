@@ -2,6 +2,19 @@
   "schema": 1,
   "catalog": [
     {
+      "id": "cloudflare",
+      "version": "1.0.0",
+      "name": "Cloudflare",
+      "url": "https://dash.cloudflare.com/",
+      "internal_hosts": [
+        "one.dash.cloudflare.com",
+        "accounts.google.com",
+        "appleid.apple.com",
+        "github.com"
+      ],
+      "notes": "Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser"
+    },
+    {
       "id": "discord",
       "version": "1.0.0",
       "name": "Discord",
@@ -57,6 +70,20 @@
         "appleid.apple.com"
       ],
       "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support"
+    },
+    {
+      "id": "tailscale",
+      "version": "1.0.0",
+      "name": "Tailscale",
+      "url": "https://login.tailscale.com/admin",
+      "internal_hosts": [
+        "accounts.google.com",
+        "login.microsoftonline.com",
+        "login.live.com",
+        "github.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser"
     },
     {
       "id": "whatsapp",

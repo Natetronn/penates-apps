@@ -1,0 +1,14 @@
+{
+  "id": "tailscale",
+  "version": "1.0.0",
+  "name": "Tailscale",
+  "url": "https://login.tailscale.com/admin",
+  "internal_hosts": [
+    "accounts.google.com",
+    "login.microsoftonline.com",
+    "login.live.com",
+    "github.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser"
+}
