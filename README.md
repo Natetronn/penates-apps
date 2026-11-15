@@ -24,11 +24,17 @@ whose site matches. Changes here reach every Penates install without a new Penat
 
 ## Add or fix an app
 
+**From Penates:** an app's ⋮ menu → **Share with the app catalog…** shows the entry for review and opens
+GitHub with it filled in: a new file for a new site (choose **Propose changes**), or an issue suggesting a change
+for a site that is already here. `penates submit <id> --notes "…"` does the same from the command line.
+
+**By hand:**
 1. Add or edit `apps/<id>.json` (the file name is the id).
 2. Bump `version` whenever you change an app; Penates only applies a preset that is newer than the one an
    app already has.
-3. Run `python3 scripts/build.py` to check your change and regenerate `catalog.json`, then open a pull request
-   with both files. CI also checks that every changed app has a new version.
+3. Open a pull request with the app file. CI checks it (and that a changed app has a new version);
+   `catalog.json` is rebuilt automatically once it is merged. `python3 scripts/build.py` checks and rebuilds
+   it locally if you want to look.
 
 ```json
 {

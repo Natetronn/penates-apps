@@ -1,0 +1,23 @@
+# After a change lands on main, rebuild catalog.json (the file Penates downloads) and commit it.
+# Contributors only add or edit apps/<id>.json, e.g. from GitHub's web editor.
+name: Build catalog
+on:
+  push:
+    branches: [main]
+    paths: ['apps/**', 'scripts/build.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/build.py
+      - name: Commit catalog.json if it changed
+        run: |
+          if git diff --quiet catalog.json; then echo "catalog.json is current"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild catalog.json" catalog.json
+          git push

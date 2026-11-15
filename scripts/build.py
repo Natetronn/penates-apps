@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Validate apps/*.json and write catalog.json (the file Penates downloads).
 
-    python3 scripts/build.py                      # write catalog.json
-    python3 scripts/build.py --check              # fail if an app file is invalid or catalog.json is out of date
-    python3 scripts/build.py --check --base REF   # also fail if an app changed since REF without a new version (CI)
+    python3 scripts/build.py                         # write catalog.json
+    python3 scripts/build.py --check                 # fail if an app file is invalid or catalog.json is out of date
+    python3 scripts/build.py --validate --base REF   # pull requests: app files only, and changed apps need a new version
+                                                     # (catalog.json is rebuilt automatically after merging)
 """
 import json, pathlib, re, subprocess, sys
 from urllib.parse import urlparse
@@ -92,6 +93,9 @@ def main():
     if errs:
         sys.exit("\n".join(errs))
     out = ROOT / "catalog.json"
+    if "--validate" in sys.argv:
+        print(f"ok: {count} apps")
+        return
     if "--check" in sys.argv:
         if not out.exists() or out.read_text() != text:
             sys.exit("catalog.json is out of date: run python3 scripts/build.py and commit it")

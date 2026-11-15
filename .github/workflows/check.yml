@@ -1,20 +1,12 @@
 name: Check
 on:
-  push:
-    branches: [main]
   pull_request:
 jobs:
-  catalog:
+  apps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Apps are valid, catalog.json is current, changed apps have a new version
-        run: |
-          base="${{ github.event.pull_request.base.sha || github.event.before }}"
-          if [ -n "$base" ] && git cat-file -e "$base^{commit}" 2>/dev/null; then
-            python3 scripts/build.py --check --base "$base"
-          else
-            python3 scripts/build.py --check
-          fi
+      - name: App files are valid, and changed apps have a new version
+        run: python3 scripts/build.py --validate --base "${{ github.event.pull_request.base.sha }}"
