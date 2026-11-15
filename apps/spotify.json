@@ -1,0 +1,12 @@
+{
+  "id": "spotify",
+  "version": "1.0.0",
+  "name": "Spotify",
+  "url": "https://open.spotify.com/",
+  "internal_hosts": [
+    "*.spotify.com",
+    "accounts.google.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support"
+}

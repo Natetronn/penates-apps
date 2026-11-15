@@ -1,0 +1,12 @@
+{
+  "id": "youtube",
+  "version": "1.0.0",
+  "name": "YouTube",
+  "url": "https://www.youtube.com/",
+  "internal_hosts": [
+    "*.youtube.com",
+    "accounts.google.com",
+    "consent.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window"
+}

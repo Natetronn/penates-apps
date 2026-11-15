@@ -1,0 +1,11 @@
+{
+  "id": "discord",
+  "version": "1.0.0",
+  "name": "Discord",
+  "url": "https://discord.com/app",
+  "internal_hosts": [
+    "*.discord.com",
+    "discord.gg"
+  ],
+  "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings"
+}

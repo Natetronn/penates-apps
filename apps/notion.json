@@ -1,0 +1,13 @@
+{
+  "id": "notion",
+  "version": "1.0.0",
+  "name": "Notion",
+  "url": "https://www.notion.so/",
+  "internal_hosts": [
+    "*.notion.so",
+    "*.notion.com",
+    "accounts.google.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep Notion pages and Google or Apple sign-in inside the window"
+}

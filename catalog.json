@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "catalog": [
+    {
+      "id": "discord",
+      "version": "1.0.0",
+      "name": "Discord",
+      "url": "https://discord.com/app",
+      "internal_hosts": [
+        "*.discord.com",
+        "discord.gg"
+      ],
+      "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings"
+    },
+    {
+      "id": "github",
+      "version": "1.0.0",
+      "name": "GitHub",
+      "url": "https://github.com/",
+      "internal_hosts": [
+        "*.githubusercontent.com",
+        "githubassets.com"
+      ],
+      "notes": "Keep avatars and assets in-app"
+    },
+    {
+      "id": "notion",
+      "version": "1.0.0",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "internal_hosts": [
+        "*.notion.so",
+        "*.notion.com",
+        "accounts.google.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep Notion pages and Google or Apple sign-in inside the window"
+    },
+    {
+      "id": "proton-mail",
+      "version": "1.0.0",
+      "name": "Proton Mail",
+      "url": "https://mail.proton.me/",
+      "internal_hosts": [
+        "*.proton.me"
+      ],
+      "notes": "Keep Proton sign-in, Calendar and Drive inside the window"
+    },
+    {
+      "id": "spotify",
+      "version": "1.0.0",
+      "name": "Spotify",
+      "url": "https://open.spotify.com/",
+      "internal_hosts": [
+        "*.spotify.com",
+        "accounts.google.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support"
+    },
+    {
+      "id": "whatsapp",
+      "version": "1.0.0",
+      "name": "WhatsApp",
+      "url": "https://web.whatsapp.com/",
+      "internal_hosts": [
+        "*.whatsapp.com"
+      ],
+      "notes": "Sign in by scanning the QR code with your phone"
+    },
+    {
+      "id": "youtube-music",
+      "version": "1.0.0",
+      "name": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "internal_hosts": [
+        "*.youtube.com",
+        "accounts.google.com",
+        "consent.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window"
+    },
+    {
+      "id": "youtube",
+      "version": "1.0.0",
+      "name": "YouTube",
+      "url": "https://www.youtube.com/",
+      "internal_hosts": [
+        "*.youtube.com",
+        "accounts.google.com",
+        "consent.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window"
+    }
+  ]
+}

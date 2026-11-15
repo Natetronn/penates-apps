@@ -1,0 +1,10 @@
+{
+  "id": "whatsapp",
+  "version": "1.0.0",
+  "name": "WhatsApp",
+  "url": "https://web.whatsapp.com/",
+  "internal_hosts": [
+    "*.whatsapp.com"
+  ],
+  "notes": "Sign in by scanning the QR code with your phone"
+}

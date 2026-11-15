@@ -1,0 +1,10 @@
+{
+  "id": "proton-mail",
+  "version": "1.0.0",
+  "name": "Proton Mail",
+  "url": "https://mail.proton.me/",
+  "internal_hosts": [
+    "*.proton.me"
+  ],
+  "notes": "Keep Proton sign-in, Calendar and Drive inside the window"
+}

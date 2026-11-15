@@ -1,0 +1,11 @@
+{
+  "id": "github",
+  "version": "1.0.0",
+  "name": "GitHub",
+  "url": "https://github.com/",
+  "internal_hosts": [
+    "*.githubusercontent.com",
+    "githubassets.com"
+  ],
+  "notes": "Keep avatars and assets in-app"
+}
