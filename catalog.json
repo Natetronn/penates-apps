@@ -115,13 +115,14 @@
     },
     {
       "id": "gmail",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Gmail",
       "url": "https://mail.google.com/",
       "internal_hosts": [
         "accounts.google.com"
       ],
       "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser",
+      "icon_url": "https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_512dp.png",
       "category": "Email",
       "tags": [
         "google",
@@ -131,13 +132,14 @@
     },
     {
       "id": "google-calendar",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Google Calendar",
       "url": "https://calendar.google.com/",
       "internal_hosts": [
         "accounts.google.com"
       ],
       "notes": "Keep Google sign-in inside the window; Meet links open in your browser",
+      "icon_url": "https://www.gstatic.com/images/branding/product/2x/calendar_2020q4_512dp.png",
       "category": "Productivity",
       "tags": [
         "google",
@@ -147,7 +149,7 @@
     },
     {
       "id": "google-drive",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Google Drive",
       "url": "https://drive.google.com/",
       "internal_hosts": [
@@ -155,6 +157,7 @@
         "docs.google.com"
       ],
       "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window",
+      "icon_url": "https://www.gstatic.com/images/branding/product/2x/drive_2020q4_512dp.png",
       "category": "Productivity",
       "tags": [
         "google",
@@ -273,7 +276,7 @@
     },
     {
       "id": "tailscale",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Tailscale",
       "url": "https://login.tailscale.com/admin",
       "internal_hosts": [
@@ -284,6 +287,7 @@
         "appleid.apple.com"
       ],
       "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser",
+      "icon_url": "https://tailscale.com/favicon.png",
       "category": "Developer Tools",
       "tags": [
         "vpn",
@@ -373,7 +377,7 @@
     },
     {
       "id": "youtube",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "YouTube",
       "url": "https://www.youtube.com/",
       "internal_hosts": [
@@ -382,6 +386,7 @@
         "consent.google.com"
       ],
       "notes": "Keep Google sign-in inside the window",
+      "icon_url": "https://www.gstatic.com/youtube/img/branding/favicon/favicon_192x192_v2.png",
       "category": "Media",
       "tags": [
         "video",
