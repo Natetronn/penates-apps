@@ -11,16 +11,28 @@ whose site matches. Changes here reach every Penates install without a new Penat
 
 | App | Site | What the preset does |
 |---|---|---|
-| Cloudflare | dash.cloudflare.com | Keeps the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser. |
+| ChatGPT | chatgpt.com | Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs "Allow camera and microphone" in the app's settings. |
+| Claude | claude.ai | Keep Google sign-in inside the window. |
+| Cloudflare | dash.cloudflare.com | Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser. |
 | Discord | discord.com/app | Invite links open in the app. Voice and video need "Allow camera and microphone" in the app's settings. |
-| GitHub | github.com | Keeps gists and other github.com pages in the window. |
-| Notion | notion.so | Keeps Notion pages and Google or Apple sign-in inside the window. |
-| Proton Mail | mail.proton.me | Keeps Proton sign-in, Calendar and Drive inside the window. |
-| Spotify | open.spotify.com | Keeps Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support. |
-| Tailscale | login.tailscale.com/admin | Keeps Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser. |
+| Figma | figma.com | Keep Google sign-in inside the window. |
+| GitHub | github.com | Keep gists and other github.com pages in the window. |
+| Gmail | mail.google.com | Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser. |
+| Google Calendar | calendar.google.com | Keep Google sign-in inside the window; Meet links open in your browser. |
+| Google Drive | drive.google.com | Keep Google sign-in and Docs, Sheets and Slides inside the window. |
+| Linear | linear.app | Keep Google sign-in inside the window. |
+| Notion | notion.so | Keep Notion pages and Google or Apple sign-in inside the window. |
+| Outlook | outlook.live.com | Keep Microsoft sign-in inside the window, for personal and work or school accounts. |
+| Proton Mail | mail.proton.me | Keep Proton sign-in, Calendar and Drive inside the window. |
+| Slack | app.slack.com | Keep your workspaces and Google or Apple sign-in inside the window. Huddles need "Allow camera and microphone" in the app's settings. |
+| Spotify | open.spotify.com | Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support. |
+| Tailscale | login.tailscale.com/admin | Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser. |
+| Telegram | web.telegram.org | Sign in with the code Telegram sends you, or by scanning the QR code with your phone. |
+| Todoist | app.todoist.com | Keep Google or Apple sign-in inside the window. |
+| Trello | trello.com | Keep Atlassian, Google, Microsoft or Apple sign-in inside the window. |
 | WhatsApp | web.whatsapp.com | Sign in by scanning the QR code with your phone. |
-| YouTube | youtube.com | Keeps Google sign-in inside the window. |
-| YouTube Music | music.youtube.com | Keeps Google sign-in inside the window. |
+| YouTube | youtube.com | Keep Google sign-in inside the window. |
+| YouTube Music | music.youtube.com | Keep Google sign-in inside the window. |
 
 ## Add or fix an app
 

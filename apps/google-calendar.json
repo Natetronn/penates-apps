@@ -1,0 +1,10 @@
+{
+  "id": "google-calendar",
+  "version": "1.0.0",
+  "name": "Google Calendar",
+  "url": "https://calendar.google.com/",
+  "internal_hosts": [
+    "accounts.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window; Meet links open in your browser"
+}

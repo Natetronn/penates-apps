@@ -1,0 +1,11 @@
+{
+  "id": "google-drive",
+  "version": "1.0.0",
+  "name": "Google Drive",
+  "url": "https://drive.google.com/",
+  "internal_hosts": [
+    "accounts.google.com",
+    "docs.google.com"
+  ],
+  "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window"
+}

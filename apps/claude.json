@@ -1,0 +1,10 @@
+{
+  "id": "claude",
+  "version": "1.0.0",
+  "name": "Claude",
+  "url": "https://claude.ai/",
+  "internal_hosts": [
+    "accounts.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window"
+}

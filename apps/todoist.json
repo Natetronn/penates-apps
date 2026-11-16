@@ -1,0 +1,11 @@
+{
+  "id": "todoist",
+  "version": "1.0.0",
+  "name": "Todoist",
+  "url": "https://app.todoist.com/",
+  "internal_hosts": [
+    "accounts.google.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep Google or Apple sign-in inside the window"
+}

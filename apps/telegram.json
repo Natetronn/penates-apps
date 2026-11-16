@@ -1,0 +1,7 @@
+{
+  "id": "telegram",
+  "version": "1.0.0",
+  "name": "Telegram",
+  "url": "https://web.telegram.org/a/",
+  "notes": "Sign in with the code Telegram sends you, or by scanning the QR code with your phone"
+}

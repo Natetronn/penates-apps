@@ -1,0 +1,14 @@
+{
+  "id": "outlook",
+  "version": "1.0.0",
+  "name": "Outlook",
+  "url": "https://outlook.live.com/mail/",
+  "internal_hosts": [
+    "login.live.com",
+    "account.live.com",
+    "login.microsoftonline.com",
+    "outlook.office.com",
+    "outlook.office365.com"
+  ],
+  "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts"
+}
