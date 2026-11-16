@@ -1,6 +1,6 @@
 {
   "id": "google-drive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Google Drive",
   "url": "https://drive.google.com/",
   "internal_hosts": [
@@ -8,6 +8,7 @@
     "docs.google.com"
   ],
   "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window",
+  "icon_url": "https://www.gstatic.com/images/branding/product/2x/drive_2020q4_512dp.png",
   "category": "Productivity",
   "tags": [
     "google",

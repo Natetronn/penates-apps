@@ -1,6 +1,6 @@
 {
   "id": "youtube",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "YouTube",
   "url": "https://www.youtube.com/",
   "internal_hosts": [
@@ -9,6 +9,7 @@
     "consent.google.com"
   ],
   "notes": "Keep Google sign-in inside the window",
+  "icon_url": "https://www.gstatic.com/youtube/img/branding/favicon/favicon_192x192_v2.png",
   "category": "Media",
   "tags": [
     "video",

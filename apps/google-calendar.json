@@ -1,12 +1,13 @@
 {
   "id": "google-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Google Calendar",
   "url": "https://calendar.google.com/",
   "internal_hosts": [
     "accounts.google.com"
   ],
   "notes": "Keep Google sign-in inside the window; Meet links open in your browser",
+  "icon_url": "https://www.gstatic.com/images/branding/product/2x/calendar_2020q4_512dp.png",
   "category": "Productivity",
   "tags": [
     "google",
