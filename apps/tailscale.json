@@ -1,6 +1,6 @@
 {
   "id": "tailscale",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Tailscale",
   "url": "https://login.tailscale.com/admin",
   "internal_hosts": [
@@ -11,6 +11,7 @@
     "appleid.apple.com"
   ],
   "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser",
+  "icon_url": "https://tailscale.com/favicon.png",
   "category": "Developer Tools",
   "tags": [
     "vpn",

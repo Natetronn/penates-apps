@@ -1,12 +1,13 @@
 {
   "id": "gmail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Gmail",
   "url": "https://mail.google.com/",
   "internal_hosts": [
     "accounts.google.com"
   ],
   "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser",
+  "icon_url": "https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_512dp.png",
   "category": "Email",
   "tags": [
     "google",
