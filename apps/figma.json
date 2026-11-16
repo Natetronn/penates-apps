@@ -1,0 +1,10 @@
+{
+  "id": "figma",
+  "version": "1.0.0",
+  "name": "Figma",
+  "url": "https://www.figma.com/files/",
+  "internal_hosts": [
+    "accounts.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window"
+}

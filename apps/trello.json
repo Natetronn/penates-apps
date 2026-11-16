@@ -1,0 +1,15 @@
+{
+  "id": "trello",
+  "version": "1.0.0",
+  "name": "Trello",
+  "url": "https://trello.com/",
+  "internal_hosts": [
+    "id.atlassian.com",
+    "auth.atlassian.com",
+    "accounts.google.com",
+    "login.microsoftonline.com",
+    "login.live.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep Atlassian, Google, Microsoft or Apple sign-in inside the window"
+}

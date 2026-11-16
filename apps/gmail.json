@@ -1,0 +1,10 @@
+{
+  "id": "gmail",
+  "version": "1.0.0",
+  "name": "Gmail",
+  "url": "https://mail.google.com/",
+  "internal_hosts": [
+    "accounts.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser"
+}

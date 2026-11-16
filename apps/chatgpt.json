@@ -1,0 +1,14 @@
+{
+  "id": "chatgpt",
+  "version": "1.0.0",
+  "name": "ChatGPT",
+  "url": "https://chatgpt.com/",
+  "internal_hosts": [
+    "auth.openai.com",
+    "accounts.google.com",
+    "login.microsoftonline.com",
+    "login.live.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings"
+}

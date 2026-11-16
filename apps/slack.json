@@ -1,0 +1,12 @@
+{
+  "id": "slack",
+  "version": "1.0.0",
+  "name": "Slack",
+  "url": "https://app.slack.com/client",
+  "internal_hosts": [
+    "*.slack.com",
+    "accounts.google.com",
+    "appleid.apple.com"
+  ],
+  "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings"
+}

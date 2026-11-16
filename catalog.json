@@ -2,6 +2,30 @@
   "schema": 1,
   "catalog": [
     {
+      "id": "chatgpt",
+      "version": "1.0.0",
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "internal_hosts": [
+        "auth.openai.com",
+        "accounts.google.com",
+        "login.microsoftonline.com",
+        "login.live.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings"
+    },
+    {
+      "id": "claude",
+      "version": "1.0.0",
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "internal_hosts": [
+        "accounts.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window"
+    },
+    {
       "id": "cloudflare",
       "version": "1.0.0",
       "name": "Cloudflare",
@@ -26,6 +50,16 @@
       "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings"
     },
     {
+      "id": "figma",
+      "version": "1.0.0",
+      "name": "Figma",
+      "url": "https://www.figma.com/files/",
+      "internal_hosts": [
+        "accounts.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window"
+    },
+    {
       "id": "github",
       "version": "1.1.0",
       "name": "GitHub",
@@ -34,6 +68,47 @@
         "*.github.com"
       ],
       "notes": "Keep gists and other github.com pages in the window"
+    },
+    {
+      "id": "gmail",
+      "version": "1.0.0",
+      "name": "Gmail",
+      "url": "https://mail.google.com/",
+      "internal_hosts": [
+        "accounts.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser"
+    },
+    {
+      "id": "google-calendar",
+      "version": "1.0.0",
+      "name": "Google Calendar",
+      "url": "https://calendar.google.com/",
+      "internal_hosts": [
+        "accounts.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window; Meet links open in your browser"
+    },
+    {
+      "id": "google-drive",
+      "version": "1.0.0",
+      "name": "Google Drive",
+      "url": "https://drive.google.com/",
+      "internal_hosts": [
+        "accounts.google.com",
+        "docs.google.com"
+      ],
+      "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window"
+    },
+    {
+      "id": "linear",
+      "version": "1.0.0",
+      "name": "Linear",
+      "url": "https://linear.app/",
+      "internal_hosts": [
+        "accounts.google.com"
+      ],
+      "notes": "Keep Google sign-in inside the window"
     },
     {
       "id": "notion",
@@ -49,6 +124,20 @@
       "notes": "Keep Notion pages and Google or Apple sign-in inside the window"
     },
     {
+      "id": "outlook",
+      "version": "1.0.0",
+      "name": "Outlook",
+      "url": "https://outlook.live.com/mail/",
+      "internal_hosts": [
+        "login.live.com",
+        "account.live.com",
+        "login.microsoftonline.com",
+        "outlook.office.com",
+        "outlook.office365.com"
+      ],
+      "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts"
+    },
+    {
       "id": "proton-mail",
       "version": "1.0.0",
       "name": "Proton Mail",
@@ -57,6 +146,18 @@
         "*.proton.me"
       ],
       "notes": "Keep Proton sign-in, Calendar and Drive inside the window"
+    },
+    {
+      "id": "slack",
+      "version": "1.0.0",
+      "name": "Slack",
+      "url": "https://app.slack.com/client",
+      "internal_hosts": [
+        "*.slack.com",
+        "accounts.google.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings"
     },
     {
       "id": "spotify",
@@ -83,6 +184,39 @@
         "appleid.apple.com"
       ],
       "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser"
+    },
+    {
+      "id": "telegram",
+      "version": "1.0.0",
+      "name": "Telegram",
+      "url": "https://web.telegram.org/a/",
+      "notes": "Sign in with the code Telegram sends you, or by scanning the QR code with your phone"
+    },
+    {
+      "id": "todoist",
+      "version": "1.0.0",
+      "name": "Todoist",
+      "url": "https://app.todoist.com/",
+      "internal_hosts": [
+        "accounts.google.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep Google or Apple sign-in inside the window"
+    },
+    {
+      "id": "trello",
+      "version": "1.0.0",
+      "name": "Trello",
+      "url": "https://trello.com/",
+      "internal_hosts": [
+        "id.atlassian.com",
+        "auth.atlassian.com",
+        "accounts.google.com",
+        "login.microsoftonline.com",
+        "login.live.com",
+        "appleid.apple.com"
+      ],
+      "notes": "Keep Atlassian, Google, Microsoft or Apple sign-in inside the window"
     },
     {
       "id": "whatsapp",

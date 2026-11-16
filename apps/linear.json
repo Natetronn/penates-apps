@@ -1,0 +1,10 @@
+{
+  "id": "linear",
+  "version": "1.0.0",
+  "name": "Linear",
+  "url": "https://linear.app/",
+  "internal_hosts": [
+    "accounts.google.com"
+  ],
+  "notes": "Keep Google sign-in inside the window"
+}
