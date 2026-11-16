@@ -8,5 +8,10 @@
     "accounts.google.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support"
+  "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support",
+  "category": "Media",
+  "tags": [
+    "music",
+    "podcasts"
+  ]
 }

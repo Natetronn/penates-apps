@@ -5,34 +5,38 @@ websites into desktop apps. A preset holds the small fixes a site needs to work 
 which sign-in pages should stay inside the window.
 
 Penates downloads [`catalog.json`](catalog.json) when you create or update an app, and applies the preset
-whose site matches. Changes here reach every Penates install without a new Penates release.
+whose site matches. From Penates 0.1.3, its **Catalog** tab lists these apps by category, with the popular ones
+first. Changes here reach every Penates install without a
+new Penates release.
 
 ## Apps
 
-| App | Site | What the preset does |
-|---|---|---|
-| ChatGPT | chatgpt.com | Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs "Allow camera and microphone" in the app's settings. |
-| Claude | claude.ai | Keep Google sign-in inside the window. |
-| Cloudflare | dash.cloudflare.com | Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser. |
-| Discord | discord.com/app | Invite links open in the app. Voice and video need "Allow camera and microphone" in the app's settings. |
-| Figma | figma.com | Keep Google sign-in inside the window. |
-| GitHub | github.com | Keep gists and other github.com pages in the window. |
-| Gmail | mail.google.com | Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser. |
-| Google Calendar | calendar.google.com | Keep Google sign-in inside the window; Meet links open in your browser. |
-| Google Drive | drive.google.com | Keep Google sign-in and Docs, Sheets and Slides inside the window. |
-| Linear | linear.app | Keep Google sign-in inside the window. |
-| Notion | notion.so | Keep Notion pages and Google or Apple sign-in inside the window. |
-| Outlook | outlook.live.com | Keep Microsoft sign-in inside the window, for personal and work or school accounts. |
-| Proton Mail | mail.proton.me | Keep Proton sign-in, Calendar and Drive inside the window. |
-| Slack | app.slack.com | Keep your workspaces and Google or Apple sign-in inside the window. Huddles need "Allow camera and microphone" in the app's settings. |
-| Spotify | open.spotify.com | Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support. |
-| Tailscale | login.tailscale.com/admin | Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser. |
-| Telegram | web.telegram.org | Sign in with the code Telegram sends you, or by scanning the QR code with your phone. |
-| Todoist | app.todoist.com | Keep Google or Apple sign-in inside the window. |
-| Trello | trello.com | Keep Atlassian, Google, Microsoft or Apple sign-in inside the window. |
-| WhatsApp | web.whatsapp.com | Sign in by scanning the QR code with your phone. |
-| YouTube | youtube.com | Keep Google sign-in inside the window. |
-| YouTube Music | music.youtube.com | Keep Google sign-in inside the window. |
+| App | Category | Site | What the preset does |
+|---|---|---|---|
+| ChatGPT ★ | AI | chatgpt.com | Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs "Allow camera and microphone" in the app's settings. |
+| Claude ★ | AI | claude.ai | Keep Google sign-in inside the window. |
+| Cloudflare | Developer Tools | dash.cloudflare.com | Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser. |
+| Discord ★ | Communication | discord.com/app | Invite links open in the app. Voice and video need "Allow camera and microphone" in the app's settings. |
+| Figma | Design | figma.com/files | Keep Google sign-in inside the window. |
+| GitHub ★ | Developer Tools | github.com | Keep gists and other github.com pages in the window. |
+| Gmail ★ | Email | mail.google.com | Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser. |
+| Google Calendar | Productivity | calendar.google.com | Keep Google sign-in inside the window; Meet links open in your browser. |
+| Google Drive | Productivity | drive.google.com | Keep Google sign-in and Docs, Sheets and Slides inside the window. |
+| Linear | Productivity | linear.app | Keep Google sign-in inside the window. |
+| Notion ★ | Productivity | notion.so | Keep Notion pages and Google or Apple sign-in inside the window. |
+| Outlook | Email | outlook.live.com/mail | Keep Microsoft sign-in inside the window, for personal and work or school accounts. |
+| Proton Mail | Email | mail.proton.me | Keep Proton sign-in, Calendar and Drive inside the window. |
+| Slack ★ | Communication | app.slack.com/client | Keep your workspaces and Google or Apple sign-in inside the window. Huddles need "Allow camera and microphone" in the app's settings. |
+| Spotify | Media | open.spotify.com | Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support. |
+| Tailscale | Developer Tools | login.tailscale.com/admin | Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser. |
+| Telegram | Communication | web.telegram.org/a | Sign in with the code Telegram sends you, or by scanning the QR code with your phone. |
+| Todoist | Productivity | app.todoist.com | Keep Google or Apple sign-in inside the window. |
+| Trello | Productivity | trello.com | Keep Atlassian, Google, Microsoft or Apple sign-in inside the window. |
+| WhatsApp | Communication | web.whatsapp.com | Sign in by scanning the QR code with your phone. |
+| YouTube ★ | Media | youtube.com | Keep Google sign-in inside the window. |
+| YouTube Music | Media | music.youtube.com | Keep Google sign-in inside the window. |
+
+★ Shown under **Popular** in the App Catalog.
 
 ## Add or fix an app
 
@@ -55,7 +59,10 @@ for a site that is already here. `penates submit <id> --notes "…"` does the sa
   "name": "GitHub",
   "url": "https://github.com/",
   "internal_hosts": ["*.github.com"],
-  "notes": "Keep gists and other github.com pages in the window"
+  "notes": "Keep gists and other github.com pages in the window",
+  "category": "Developer Tools",
+  "tags": ["code", "git", "pull requests"],
+  "popular": true
 }
 ```
 
@@ -70,6 +77,12 @@ for a site that is already here. `penates submit <id> --notes "…"` does the sa
 | `user_agent` | optional: only when a site refuses Penates's own; say why in `notes` |
 | `inject_css` | optional: small style fixes |
 | `icon_url` | optional: an https:// icon when the site's own is poor |
+| `category` | optional, for the App Catalog: one of AI, Communication, Design, Developer Tools, Email, Media, Productivity |
+| `tags` | optional, for the App Catalog's search: up to 8 lowercase words, e.g. `["chat", "work"]` |
+| `popular` | optional, for the App Catalog: `true` puts the app under Popular (chosen here, not counted: Penates has no telemetry) |
+
+`category`, `tags` and `popular` only place an app in the App Catalog; they are not part of the preset, so
+changing them needs no new `version`.
 
 Custom JavaScript is never accepted: Penates ignores it in presets, and the check rejects it.
 

@@ -8,5 +8,12 @@
     "accounts.google.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings"
+  "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings",
+  "category": "Communication",
+  "tags": [
+    "chat",
+    "work",
+    "huddles"
+  ],
+  "popular": true
 }

@@ -6,5 +6,10 @@
   "internal_hosts": [
     "*.whatsapp.com"
   ],
-  "notes": "Sign in by scanning the QR code with your phone"
+  "notes": "Sign in by scanning the QR code with your phone",
+  "category": "Communication",
+  "tags": [
+    "chat",
+    "messaging"
+  ]
 }

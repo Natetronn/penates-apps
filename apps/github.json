@@ -6,5 +6,12 @@
   "internal_hosts": [
     "*.github.com"
   ],
-  "notes": "Keep gists and other github.com pages in the window"
+  "notes": "Keep gists and other github.com pages in the window",
+  "category": "Developer Tools",
+  "tags": [
+    "code",
+    "git",
+    "pull requests"
+  ],
+  "popular": true
 }

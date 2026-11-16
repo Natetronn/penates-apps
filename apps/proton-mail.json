@@ -6,5 +6,11 @@
   "internal_hosts": [
     "*.proton.me"
   ],
-  "notes": "Keep Proton sign-in, Calendar and Drive inside the window"
+  "notes": "Keep Proton sign-in, Calendar and Drive inside the window",
+  "category": "Email",
+  "tags": [
+    "mail",
+    "privacy",
+    "encrypted"
+  ]
 }

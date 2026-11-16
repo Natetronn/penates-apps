@@ -10,5 +10,12 @@
     "login.live.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings"
+  "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings",
+  "category": "AI",
+  "tags": [
+    "chat",
+    "assistant",
+    "openai"
+  ],
+  "popular": true
 }

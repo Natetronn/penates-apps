@@ -7,5 +7,10 @@
     "accounts.google.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep Google or Apple sign-in inside the window"
+  "notes": "Keep Google or Apple sign-in inside the window",
+  "category": "Productivity",
+  "tags": [
+    "tasks",
+    "to-do"
+  ]
 }

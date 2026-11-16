@@ -10,5 +10,12 @@
     "github.com"
   ],
   "notes": "Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser",
-  "icon_url": "https://dash.cloudflare.com/apple-touch-icon.png"
+  "icon_url": "https://dash.cloudflare.com/apple-touch-icon.png",
+  "category": "Developer Tools",
+  "tags": [
+    "dns",
+    "hosting",
+    "security",
+    "zero trust"
+  ]
 }
