@@ -13,7 +13,14 @@
         "login.live.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings"
+      "notes": "Keep OpenAI, Google, Microsoft or Apple sign-in inside the window. Voice needs \"Allow camera and microphone\" in the app's settings",
+      "category": "AI",
+      "tags": [
+        "chat",
+        "assistant",
+        "openai"
+      ],
+      "popular": true
     },
     {
       "id": "claude",
@@ -24,7 +31,14 @@
         "accounts.google.com"
       ],
       "notes": "Keep Google sign-in inside the window",
-      "icon_url": "https://claude.ai/apple-touch-icon.png"
+      "icon_url": "https://claude.ai/apple-touch-icon.png",
+      "category": "AI",
+      "tags": [
+        "chat",
+        "assistant",
+        "anthropic"
+      ],
+      "popular": true
     },
     {
       "id": "cloudflare",
@@ -38,7 +52,14 @@
         "github.com"
       ],
       "notes": "Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser",
-      "icon_url": "https://dash.cloudflare.com/apple-touch-icon.png"
+      "icon_url": "https://dash.cloudflare.com/apple-touch-icon.png",
+      "category": "Developer Tools",
+      "tags": [
+        "dns",
+        "hosting",
+        "security",
+        "zero trust"
+      ]
     },
     {
       "id": "discord",
@@ -49,7 +70,15 @@
         "*.discord.com",
         "discord.gg"
       ],
-      "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings"
+      "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings",
+      "category": "Communication",
+      "tags": [
+        "chat",
+        "voice",
+        "community",
+        "gaming"
+      ],
+      "popular": true
     },
     {
       "id": "figma",
@@ -59,7 +88,13 @@
       "internal_hosts": [
         "accounts.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window"
+      "notes": "Keep Google sign-in inside the window",
+      "category": "Design",
+      "tags": [
+        "prototyping",
+        "ui",
+        "whiteboard"
+      ]
     },
     {
       "id": "github",
@@ -69,7 +104,14 @@
       "internal_hosts": [
         "*.github.com"
       ],
-      "notes": "Keep gists and other github.com pages in the window"
+      "notes": "Keep gists and other github.com pages in the window",
+      "category": "Developer Tools",
+      "tags": [
+        "code",
+        "git",
+        "pull requests"
+      ],
+      "popular": true
     },
     {
       "id": "gmail",
@@ -79,7 +121,13 @@
       "internal_hosts": [
         "accounts.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser"
+      "notes": "Keep Google sign-in inside the window; Calendar, Drive and other Google apps open in your browser",
+      "category": "Email",
+      "tags": [
+        "google",
+        "mail"
+      ],
+      "popular": true
     },
     {
       "id": "google-calendar",
@@ -89,7 +137,13 @@
       "internal_hosts": [
         "accounts.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window; Meet links open in your browser"
+      "notes": "Keep Google sign-in inside the window; Meet links open in your browser",
+      "category": "Productivity",
+      "tags": [
+        "google",
+        "calendar",
+        "meetings"
+      ]
     },
     {
       "id": "google-drive",
@@ -100,7 +154,15 @@
         "accounts.google.com",
         "docs.google.com"
       ],
-      "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window"
+      "notes": "Keep Google sign-in and Docs, Sheets and Slides inside the window",
+      "category": "Productivity",
+      "tags": [
+        "google",
+        "files",
+        "docs",
+        "sheets",
+        "slides"
+      ]
     },
     {
       "id": "linear",
@@ -110,7 +172,12 @@
       "internal_hosts": [
         "accounts.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window"
+      "notes": "Keep Google sign-in inside the window",
+      "category": "Productivity",
+      "tags": [
+        "issues",
+        "projects"
+      ]
     },
     {
       "id": "notion",
@@ -123,7 +190,14 @@
         "accounts.google.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep Notion pages and Google or Apple sign-in inside the window"
+      "notes": "Keep Notion pages and Google or Apple sign-in inside the window",
+      "category": "Productivity",
+      "tags": [
+        "notes",
+        "wiki",
+        "docs"
+      ],
+      "popular": true
     },
     {
       "id": "outlook",
@@ -137,7 +211,13 @@
         "outlook.office.com",
         "outlook.office365.com"
       ],
-      "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts"
+      "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts",
+      "category": "Email",
+      "tags": [
+        "microsoft",
+        "mail",
+        "calendar"
+      ]
     },
     {
       "id": "proton-mail",
@@ -147,7 +227,13 @@
       "internal_hosts": [
         "*.proton.me"
       ],
-      "notes": "Keep Proton sign-in, Calendar and Drive inside the window"
+      "notes": "Keep Proton sign-in, Calendar and Drive inside the window",
+      "category": "Email",
+      "tags": [
+        "mail",
+        "privacy",
+        "encrypted"
+      ]
     },
     {
       "id": "slack",
@@ -159,7 +245,14 @@
         "accounts.google.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings"
+      "notes": "Keep your workspaces and Google or Apple sign-in inside the window. Huddles need \"Allow camera and microphone\" in the app's settings",
+      "category": "Communication",
+      "tags": [
+        "chat",
+        "work",
+        "huddles"
+      ],
+      "popular": true
     },
     {
       "id": "spotify",
@@ -171,7 +264,12 @@
         "accounts.google.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support"
+      "notes": "Keep Spotify sign-in inside the window. On Linux, music playback needs Widevine DRM, which WebKitGTK does not support",
+      "category": "Media",
+      "tags": [
+        "music",
+        "podcasts"
+      ]
     },
     {
       "id": "tailscale",
@@ -185,14 +283,24 @@
         "github.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser"
+      "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser",
+      "category": "Developer Tools",
+      "tags": [
+        "vpn",
+        "network"
+      ]
     },
     {
       "id": "telegram",
       "version": "1.0.0",
       "name": "Telegram",
       "url": "https://web.telegram.org/a/",
-      "notes": "Sign in with the code Telegram sends you, or by scanning the QR code with your phone"
+      "notes": "Sign in with the code Telegram sends you, or by scanning the QR code with your phone",
+      "category": "Communication",
+      "tags": [
+        "chat",
+        "messaging"
+      ]
     },
     {
       "id": "todoist",
@@ -203,7 +311,12 @@
         "accounts.google.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep Google or Apple sign-in inside the window"
+      "notes": "Keep Google or Apple sign-in inside the window",
+      "category": "Productivity",
+      "tags": [
+        "tasks",
+        "to-do"
+      ]
     },
     {
       "id": "trello",
@@ -218,7 +331,13 @@
         "login.live.com",
         "appleid.apple.com"
       ],
-      "notes": "Keep Atlassian, Google, Microsoft or Apple sign-in inside the window"
+      "notes": "Keep Atlassian, Google, Microsoft or Apple sign-in inside the window",
+      "category": "Productivity",
+      "tags": [
+        "boards",
+        "kanban",
+        "projects"
+      ]
     },
     {
       "id": "whatsapp",
@@ -228,7 +347,12 @@
       "internal_hosts": [
         "*.whatsapp.com"
       ],
-      "notes": "Sign in by scanning the QR code with your phone"
+      "notes": "Sign in by scanning the QR code with your phone",
+      "category": "Communication",
+      "tags": [
+        "chat",
+        "messaging"
+      ]
     },
     {
       "id": "youtube-music",
@@ -240,7 +364,12 @@
         "accounts.google.com",
         "consent.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window"
+      "notes": "Keep Google sign-in inside the window",
+      "category": "Media",
+      "tags": [
+        "music",
+        "google"
+      ]
     },
     {
       "id": "youtube",
@@ -252,7 +381,13 @@
         "accounts.google.com",
         "consent.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window"
+      "notes": "Keep Google sign-in inside the window",
+      "category": "Media",
+      "tags": [
+        "video",
+        "google"
+      ],
+      "popular": true
     }
   ]
 }

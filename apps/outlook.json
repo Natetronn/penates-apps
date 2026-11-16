@@ -10,5 +10,11 @@
     "outlook.office.com",
     "outlook.office365.com"
   ],
-  "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts"
+  "notes": "Keep Microsoft sign-in inside the window, for personal and work or school accounts",
+  "category": "Email",
+  "tags": [
+    "microsoft",
+    "mail",
+    "calendar"
+  ]
 }

@@ -10,7 +10,12 @@ import json, pathlib, re, subprocess, sys
 from urllib.parse import urlparse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ALLOWED = {"id", "version", "name", "url", "notes", "internal_hosts", "user_agent", "inject_css", "icon_url"}
+# Listing fields place an app in Penates's App Catalog (and the website's); they are not part of the preset, so
+# changing them needs no new version.
+LISTING = {"category", "tags", "popular"}
+ALLOWED = {"id", "version", "name", "url", "notes", "internal_hosts", "user_agent", "inject_css", "icon_url"} | LISTING
+CATEGORIES = ["AI", "Communication", "Design", "Developer Tools", "Email", "Media", "Productivity"]
+TAG = re.compile(r"^[a-z0-9][a-z0-9 -]{0,23}$")
 REQUIRED = {"id", "version", "name", "url", "notes"}
 ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 VER = re.compile(r"^\d+\.\d+\.\d+$")
@@ -40,6 +45,14 @@ def check(path, e):
     hosts = e.get("internal_hosts", [])
     if not isinstance(hosts, list) or not all(isinstance(h, str) and HOST.match(h) for h in hosts):
         err("internal_hosts must be host names like example.com or *.example.com")
+    if "category" in e and e["category"] not in CATEGORIES:
+        err(f"category must be one of {', '.join(CATEGORIES)}")
+    tags = e.get("tags", [])
+    if not isinstance(tags, list) or len(tags) > 8 or not all(isinstance(t, str) and TAG.match(t) for t in tags) \
+            or len(set(tags)) != len(tags):
+        err("tags must be up to 8 different lowercase words (letters, digits, spaces and dashes)")
+    if "popular" in e and not isinstance(e["popular"], bool):
+        err("popular must be true or false")
     for key in ("name", "notes", "user_agent", "inject_css"):
         if key in e and (not isinstance(e[key], str) or not e[key].strip()):
             err(f"{key} must be a non-empty string")
@@ -70,7 +83,7 @@ def ver(v):
 
 
 def unbumped(base):
-    """Apps whose file changed since git ref `base` but whose version did not go up."""
+    """Apps whose preset changed since git ref `base` (listing fields aside) but whose version did not go up."""
     errs = []
     for path in sorted((ROOT / "apps").glob("*.json")):
         old = subprocess.run(["git", "show", f"{base}:apps/{path.name}"], cwd=ROOT, capture_output=True, text=True)
@@ -80,7 +93,8 @@ def unbumped(base):
             before, now = json.loads(old.stdout), json.loads(path.read_text())
         except json.JSONDecodeError:
             continue  # reported by build()
-        if before != now and VER.match(str(now.get("version", ""))) and VER.match(str(before.get("version", ""))) \
+        preset = lambda x: {k: v for k, v in x.items() if k not in LISTING} if isinstance(x, dict) else x
+        if preset(before) != preset(now) and VER.match(str(now.get("version", ""))) and VER.match(str(before.get("version", ""))) \
                 and ver(now["version"]) <= ver(before["version"]):
             errs.append(f"{path.name}: changed but version is still {now['version']} (bump it so installed apps get the change)")
     return errs

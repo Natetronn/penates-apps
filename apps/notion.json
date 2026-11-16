@@ -9,5 +9,12 @@
     "accounts.google.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep Notion pages and Google or Apple sign-in inside the window"
+  "notes": "Keep Notion pages and Google or Apple sign-in inside the window",
+  "category": "Productivity",
+  "tags": [
+    "notes",
+    "wiki",
+    "docs"
+  ],
+  "popular": true
 }

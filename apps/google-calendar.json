@@ -6,5 +6,11 @@
   "internal_hosts": [
     "accounts.google.com"
   ],
-  "notes": "Keep Google sign-in inside the window; Meet links open in your browser"
+  "notes": "Keep Google sign-in inside the window; Meet links open in your browser",
+  "category": "Productivity",
+  "tags": [
+    "google",
+    "calendar",
+    "meetings"
+  ]
 }

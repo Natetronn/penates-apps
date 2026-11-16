@@ -7,5 +7,13 @@
     "*.discord.com",
     "discord.gg"
   ],
-  "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings"
+  "notes": "Invite links open in the app. Voice and video need \"Allow camera and microphone\" in the app's settings",
+  "category": "Communication",
+  "tags": [
+    "chat",
+    "voice",
+    "community",
+    "gaming"
+  ],
+  "popular": true
 }

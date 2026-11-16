@@ -10,5 +10,10 @@
     "github.com",
     "appleid.apple.com"
   ],
-  "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser"
+  "notes": "Keep Google, Microsoft, GitHub or Apple sign-in inside the window; docs open in your browser",
+  "category": "Developer Tools",
+  "tags": [
+    "vpn",
+    "network"
+  ]
 }

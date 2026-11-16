@@ -6,5 +6,10 @@
   "internal_hosts": [
     "accounts.google.com"
   ],
-  "notes": "Keep Google sign-in inside the window"
+  "notes": "Keep Google sign-in inside the window",
+  "category": "Productivity",
+  "tags": [
+    "issues",
+    "projects"
+  ]
 }

@@ -7,5 +7,12 @@
     "accounts.google.com"
   ],
   "notes": "Keep Google sign-in inside the window",
-  "icon_url": "https://claude.ai/apple-touch-icon.png"
+  "icon_url": "https://claude.ai/apple-touch-icon.png",
+  "category": "AI",
+  "tags": [
+    "chat",
+    "assistant",
+    "anthropic"
+  ],
+  "popular": true
 }
