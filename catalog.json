@@ -17,17 +17,18 @@
     },
     {
       "id": "claude",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Claude",
       "url": "https://claude.ai/",
       "internal_hosts": [
         "accounts.google.com"
       ],
-      "notes": "Keep Google sign-in inside the window"
+      "notes": "Keep Google sign-in inside the window",
+      "icon_url": "https://claude.ai/apple-touch-icon.png"
     },
     {
       "id": "cloudflare",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Cloudflare",
       "url": "https://dash.cloudflare.com/",
       "internal_hosts": [
@@ -36,7 +37,8 @@
         "appleid.apple.com",
         "github.com"
       ],
-      "notes": "Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser"
+      "notes": "Keep the Zero Trust dashboard and Google, Apple or GitHub sign-in inside the window; docs open in your browser",
+      "icon_url": "https://dash.cloudflare.com/apple-touch-icon.png"
     },
     {
       "id": "discord",

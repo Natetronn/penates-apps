@@ -1,10 +1,11 @@
 {
   "id": "claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Claude",
   "url": "https://claude.ai/",
   "internal_hosts": [
     "accounts.google.com"
   ],
-  "notes": "Keep Google sign-in inside the window"
+  "notes": "Keep Google sign-in inside the window",
+  "icon_url": "https://claude.ai/apple-touch-icon.png"
 }
